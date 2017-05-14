@@ -21,5 +21,6 @@ class Event < ApplicationRecord
   end
 
   belongs_to :category, :optional => true
+  has_many :tickets, :dependent => :destroy
 
 end
